@@ -29,6 +29,7 @@ public class KafkaRestController {
       }
 
       //Read all messages
+      // @RequestMapping(method = RequestMethod.GET)
       @GetMapping("/getAll")
       public String getAllMessages() {
          return messageRepo.getAllMessages() ;
